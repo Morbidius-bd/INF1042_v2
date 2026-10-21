@@ -1,0 +1,2 @@
+print( "Je m'appel Ben, Je suis élève de 12ème année, J'ai 17 ans, J'aime coder et apprendre à coder")
+#Introduction
