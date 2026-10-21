@@ -6,3 +6,4 @@ moyenne = int(note_1 + note_2 + note_3 / 3)
 round(moyenne, 2)
 
 print(moyenne)
+
