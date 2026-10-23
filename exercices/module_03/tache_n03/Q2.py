@@ -1,7 +1,7 @@
-pasword = input("Entrer le mot de passe:")
+password = input("Entrer le mot de passe:")
 
-if password == Boréal:
-  print("Accès accordé)
+if password == "Boréal":
+  print("Accès accordé")
 
 else:
   print("Accès refusé")

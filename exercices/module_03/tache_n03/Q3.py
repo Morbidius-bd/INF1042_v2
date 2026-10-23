@@ -1,3 +1,5 @@
+note = int(input("Entrer la note:"))
+
 if note >= 60:
   print("Réussite")
 
