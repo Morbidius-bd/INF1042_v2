@@ -1,4 +1,4 @@
-Age = int(input("Entrer votre age:"))
+age = int(input("Entrer votre age:"))
 nom = input("Entrer votre nom")
 
 new_age = int(age) + 5
