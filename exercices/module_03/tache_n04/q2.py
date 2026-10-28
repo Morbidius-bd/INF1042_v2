@@ -1,5 +1,5 @@
 compteur = 1
 
 while compteur <= 5:
-  print(f"Compteur: {compteur})
+  print(f"Compteur: {compteur}")
   compteur += 1 
