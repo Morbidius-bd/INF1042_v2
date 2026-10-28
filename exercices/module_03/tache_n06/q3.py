@@ -1,5 +1,5 @@
-x = float(input("Enter x:"))
-y = float(input("Enter y:"))
+x = float(input("Entrez x:"))
+y = float(input("Entrez y:"))
 
 produit = x * y
 différence = x - y
