@@ -1,4 +1,8 @@
-import pi
+import math
 def aire_cercle(diametre):
-  diametre * pi
-   return aire_cercle
+
+  rayon = diametre / 2
+  aire = math.pi * rayon**2
+  
+  return aire
+

@@ -1,5 +1,5 @@
 from datetime import date, timedelta
 today = date.today()
-futur_date = today + int(timedelta(days = float(4.2 days)))
+futur_date = today + timedelta(hours=100)
 
-print(futue_date)
+print(futur_date)
