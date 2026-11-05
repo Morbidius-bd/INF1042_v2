@@ -9,7 +9,8 @@ ville = input("Ville de naissance:")
 identifiant = f"{prenom}.{nom}@{ville}.ca"
 print(f"identifiant généré: {identifiant}")
 
-mot_de_passe = secrets.choices(string.ascii_letters + string.digits, k=4)
+mot_de_passe = secrets.choice(string.ascii_letters + string.digits)
 
-mot_aleatoire = "".join(mot_de_passe)
-print(mot_aleatoire) 
+for i in range(4):
+    mot_aleatoire = "".join(mot_de_passe) 
+    print(mot_aleatoire) 
