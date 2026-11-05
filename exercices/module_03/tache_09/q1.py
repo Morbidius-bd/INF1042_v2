@@ -1,7 +1,7 @@
 import secrets
 import string
 
-nom = input("Entrez votre prenom:") prenom.nom@ville.ca.
+nom = input("Entrez votre prenom:")
 prenom = input("Entrer votre nom:")
 annee_de_naissance = int(input("Entrez votre annee de naissance:"))
 ville = input("Ville de naissance:")
