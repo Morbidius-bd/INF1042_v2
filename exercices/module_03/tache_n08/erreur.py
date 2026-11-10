@@ -13,7 +13,7 @@ def calculer_prix_rabais(prix_initial, type_client):
         rabais = prix_initial * 0.00  # Corrigé : le rabais est de 0$, pas du prix entier
 
     prix_final = prix_initial - rabais
-    return prix_final
+    return prix_final 
 
 
 def calculer_points_accumules(nombre_achats, points_par_achat):
