@@ -3,7 +3,7 @@ Afficher tous les montants avec 2 décimales.
    pour un achat de 120 $, appliquer d’abord 10 % de rabais, puis calculer la taxe sur le montant réduit.
 
 
-montant_sans_taxes = float(input("Quel est le montant payé?:"))
+montant_sans_taxes = float(input("Quel est le montant payé?:")) 
 if montant_sans_taxes < 50:
   rabais = montant_sans_taxes * 0
   print("Aucun rabais")
