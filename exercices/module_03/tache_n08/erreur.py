@@ -5,21 +5,15 @@ def calculer_prix_rabais(prix_initial, type_client):
     - 'Membre'  : 10% de réduction (0.10)
     - 'Régulier': 0% de réduction (0.00)
     """
-
-  prix_initial = int(input("Entrez le prix initial:"))
-
     if type_client == "VIP":
         rabais = prix_initial * 0.20
     elif type_client == "Membre":
         rabais = prix_initial * 0.10
     else:
-        rabais = prix_initial
+        rabais = prix_initial * 0.00  # Corrigé : le rabais est de 0$, pas du prix entier
 
-    # ERREUR DE LOGIQUE N°1 :
-    # Regardez la valeur de `rabais` et le résultat dans la fenêtre des variables
     prix_final = prix_initial - rabais
     return prix_final
-  print(f'le prix final est:, {prix_final}')
 
 
 def calculer_points_accumules(nombre_achats, points_par_achat):
@@ -29,9 +23,8 @@ def calculer_points_accumules(nombre_achats, points_par_achat):
     """
     total_points = 0
 
-    # ERREUR DE LOGIQUE N°2 :
-    # Observez le nombre de tours de boucle effectués dans le débogueur
-    for i in range(1, nombre_achats):
+    # Corrigé : range(0, nombre_achats) ou simplement range(nombre_achats) pour faire exactement N tours
+    for i in range(nombre_achats):
         total_points += points_par_achat
 
     return total_points
@@ -45,11 +38,10 @@ def calculer_epargne_avec_bonus(montant_mensuel, nombre_mois):
     total = 0.0
     mois_actuel = 1
 
-    # ERREUR DE LOGIQUE N°3 & N°4 :
-    # Inspectez `total` et `mois_actuel` à chaque tour de boucle
-    while mois_actuel < nombre_mois:
-        total = montant_mensuel + 5  # ERREUR N°3 : réécriture au lieu d'accumulation
-        mois_actuel += 1              # ERREUR N°4 : condition d'arrêt (manque le dernier mois)
+    # Corrigé : '<=' au lieu de '<' pour inclure le dernier mois
+    while mois_actuel <= nombre_mois:
+        total += (montant_mensuel + 5)  # Corrigé : '+=' au lieu de '=' pour accumuler les montants
+        mois_actuel += 1
 
     return total
 
@@ -58,12 +50,12 @@ def calculer_epargne_avec_bonus(montant_mensuel, nombre_mois):
 if __name__ == "__main__":
     print("=== TEST 1 : Prix avec rabais VIP ===")
     prix_vip = calculer_prix_rabais(50.00, "VIP")
-    print(f"Prix obtenu     : {prix_vip:.2f} $(Attendu : 40.00$)")
+    print(f"Prix obtenu     : {prix_vip:.2f} $ (Attendu : 40.00 $)")
 
     print("\n=== TEST 2 : Points de fidélité (5 achats de 10 points) ===")
     points = calculer_points_accumules(nombre_achats=5, points_par_achat=10)
     print(f"Points obtenus  : {points} (Attendu : 50 points)")
 
-    print("\n=== TEST 3 : Épargne sur 4 mois (50$+ 5$ bonus / mois) ===")
+    print("\n=== TEST 3 : Épargne sur 4 mois (50$ + 5$ bonus / mois) ===")
     epargne = calculer_epargne_avec_bonus(montant_mensuel=50.00, nombre_mois=4)
-    print(f"Épargne obtenue : {epargne:.2f} $(Attendu : 220.00$)")
+    print(f"Épargne obtenue : {epargne:.2f} $ (Attendu : 220.00 $)")
