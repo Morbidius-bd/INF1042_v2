@@ -1,7 +1,9 @@
-info = Ben,John,Elisée,Michée
+info = input("entrez un texte : ")
+
+texte = info.lower()
 list = info.split(",")
 
 print(list)
-texte = "-".join(list)
+combined = ' - '.join(list)
 
-print(texte)
+print(combined)
