@@ -1,2 +1,0 @@
-I’m a local developer here in Waterloo, and I help small businesses convert batches of messy PDFs—like bank statements, invoices, leases, and scanned forms—into clean, organized text or Excel/CSV spreadsheets.
-Because my extraction tool runs 100% locally on my machine rather than uploading files to public websites, your client data stays completely private and secure.
