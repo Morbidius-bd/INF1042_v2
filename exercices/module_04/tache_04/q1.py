@@ -1,6 +1,6 @@
 notes = [12, 15, 9, 18, 15, 12]
 
-moyenne = sum(float(notes)) / len(notes)
+moyenne = sum(notes) / len(notes)
 print(f"La moyenne est : {moyenne}")
 
   highest_num = max(notes, key=notes.count)
