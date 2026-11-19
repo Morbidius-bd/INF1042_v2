@@ -9,3 +9,4 @@ for num in n:
 
 inverse = pairs[::-1]
 print(inverse)
+ 
