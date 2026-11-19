@@ -1,7 +1,7 @@
-couleurs = {rouge, vert, bleu}
+couleurs = {"rouge", "vert", "bleu"}
 
-couleurs.add(jaune)
+couleurs.add("jaune")
 
-couleurs.remove(vert)
+couleurs.remove("vert")
 
 print(couleurs)
