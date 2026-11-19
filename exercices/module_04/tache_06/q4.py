@@ -1,0 +1,7 @@
+eleves_A = {"Mia", "Noah", "Liam", "Zoe"}
+eleves_B = {"Zoe", "Emma", "Liam", "Olivier"}
+
+intersection = eleves_A.intersection(eleves_B)
+
+print(f"Les élèves présents dans le groupe A sont : {eleves_A}")
+print(f"Les élèves présents dans tout les deux groupes sont : {intersection}")
